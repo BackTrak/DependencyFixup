@@ -25,7 +25,9 @@ Now, you can easily fix your assembly binding redirects with no guesswork, no de
 
 Example Syntax: 
 
-` DependencyFixup.exe <Main Assembly File> <Config Files (wildcards supported)>
+``` 
+DependencyFixup.exe [Main Assembly File] [Config Files (wildcards supported)]
+```
 
 
 > Fix all config files (release / debug) in your application:
