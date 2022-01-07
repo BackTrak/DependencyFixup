@@ -24,7 +24,8 @@ Let's say that you are using System.Net.Http.Formatting (v5.2.3.0) in your proje
 Now, you can easily fix your assembly binding redirects with no guesswork, no dependency cross stitching and no more tears. Just run my program against your compiled binary, and point it at your config files and let it fix up your application. 
 
 Example Syntax: 
-`DependencyFixup.exe <Main Assembly File> <Config Files (wildcards supported)>
+
+` DependencyFixup.exe <Main Assembly File> <Config Files (wildcards supported)>
 
 
 > Fix all config files (release / debug) in your application:
