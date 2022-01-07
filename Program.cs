@@ -29,19 +29,6 @@ namespace DependencyFixup
         }
     }
 
-    class DependencyComparer : IEqualityComparer<Dependency>
-    {
-        public bool Equals(Dependency x, Dependency y)
-        {
-            return x.AssemblyName.Equals(y.AssemblyName);
-        }
-
-        public int GetHashCode(Dependency obj)
-        {
-            return obj.AssemblyName.GetHashCode();
-        }
-    }
-
     class Program
     {
         private string _basePath;
@@ -259,31 +246,5 @@ namespace DependencyFixup
             }
         }
 
-        private Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
-        {
-            // Ignore missing resources
-            if (args.Name.Contains(".resources"))
-                return null;
-
-            // check for assemblies already loaded
-            Assembly assembly = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(a => a.FullName == args.Name);
-            if (assembly != null)
-                return assembly;
-
-            // Try to load by filename - split out the filename of the full assembly name
-            // and append the base path of the original assembly (ie. look in the same dir)
-            string filename = args.Name.Split(',')[0] + ".dll".ToLower();
-
-            string asmFile = Path.Combine(_basePath, filename);
-
-            try
-            {
-                return System.Reflection.Assembly.LoadFrom(asmFile);
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
-        }
     }
 }
