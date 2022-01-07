@@ -4,11 +4,17 @@ Have you ever wasted hours of your time trying to fix these types of errors?
 
 ```
 Could not load file or assembly or one of its dependencies
-Additional information: Could not load file or assembly 'Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+Additional information: Could not load file or assembly 
+'Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' 
+or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. 
+(Exception from HRESULT: 0x80131040)
 ```
 
 ```
-System.IO.FileLoadException : Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+System.IO.FileLoadException : Could not load file or assembly 
+'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' 
+or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. 
+(Exception from HRESULT: 0x80131040)
 ```
 
 Then, you waste even more time trying to add dependencies manually using FusLogVw, or DependencyWalker, or other utilities, only to find that other libraries in your project continue to throw these types of errors making you go around and around. Worse, these errors only show up when you actually run the code that execersises these libraries meaning you might not even find these errors until you go to production with your code causing you even more headaches. 
