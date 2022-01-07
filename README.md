@@ -39,6 +39,8 @@ DependencyFixup.exe [Main Assembly File] [Config Files (wildcards supported)]
 > Fix all config files (release / debug) in your application:
 ```
 DependencyFixup.exe "c:\source\HelloWorld\bin\Debug\HelloWorld.exe" "c:\source\HelloWorld\App*.config"
+
+DependencyFixupX64.exe "c:\source\HelloWorld\bin\Debug\HelloWorld.exe" "c:\source\HelloWorld\App*.config"
 ```
 
 > Example Output
@@ -102,6 +104,8 @@ Used By:
 </configuration>
 
 ```
+
+If you get a "Bad Image Format" exception it's probably because you are using the X86/AnyCPU version to analyze an X64 build or vice versa. Just use the X64 version instead.
 
 I hope that you find it useful, and that it saves you lots of time! 
 
