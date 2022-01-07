@@ -103,7 +103,7 @@ Used By:
 
 ```
 
-I Hope you find it useful, and that it saves you lots of time! 
+I hope that you find it useful, and that it saves you lots of time! 
 
 
 
