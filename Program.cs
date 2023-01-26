@@ -72,7 +72,7 @@ namespace DependencyFixup
             {
                 string closestFilename = _assemblyFiles.FirstOrDefault(p => p.Split(',').First().Equals(foundAssembly.AssemblyName.Split(',').First()));
 
-                Console.WriteLine($"Transient Dependency Requested:\t{GetShortName(foundAssembly.AssemblyName)}");
+                Console.WriteLine($"Transitive Dependency Requested:\t{GetShortName(foundAssembly.AssemblyName)}");
                 Console.WriteLine($"Redirecting to:\t\t\t{GetShortName(closestFilename)}");
                 Console.WriteLine($"Used By:");
 
