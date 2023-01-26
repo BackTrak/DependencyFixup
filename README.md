@@ -45,20 +45,20 @@ DependencyFixupX64.exe "c:\source\HelloWorld\bin\Debug\HelloWorld.exe" "c:\sourc
 
 > Example Output
 ```
-Transient Dependency Requested: Microsoft.Bcl.AsyncInterfaces@1.0.0.0
+Transitive Dependency Requested: Microsoft.Bcl.AsyncInterfaces@1.0.0.0
 Redirecting to:                 Microsoft.Bcl.AsyncInterfaces@5.0.0.0
 Used By:
    RedLockNet.Abstractions@2.3.1.0
    RedLockNet.SERedis@2.3.1.0
 
 
-Transient Dependency Requested: Newtonsoft.Json@10.0.0.0
+Transitive Dependency Requested: Newtonsoft.Json@10.0.0.0
 Redirecting to:                 Newtonsoft.Json@12.0.0.0
 Used By:
    Avro@1.9.0.0
 
 
-Transient Dependency Requested: Newtonsoft.Json@6.0.0.0
+Transitive Dependency Requested: Newtonsoft.Json@6.0.0.0
 Redirecting to:                 Newtonsoft.Json@12.0.0.0
 Used By:
    System.Net.Http.Formatting@5.2.3.0
@@ -66,14 +66,14 @@ Used By:
    Microsoft.Hadoop.Avro@1.5.6.0
 
 
-Transient Dependency Requested: Newtonsoft.Json@9.0.0.0
+Transitive Dependency Requested: Newtonsoft.Json@9.0.0.0
 Redirecting to:                 Newtonsoft.Json@12.0.0.0
 Used By:
    Confluent.SchemaRegistry@1.5.2.0
    Braintree@5.9.0.0
 
 
-Transient Dependency Requested: System.Memory@4.0.1.0
+Transitive Dependency Requested: System.Memory@4.0.1.0
 Redirecting to:                 System.Memory@4.0.1.1
 Used By:
    Confluent.Kafka@1.5.2.0
